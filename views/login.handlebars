@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Login</title>
+</head>
+<body>
+   <div class="main">
+        <div class="welcome">
+            <h1>ExpressJS Minimal List {{username}}!</h1>
+        </div>
+
+      <div class="loginForm">
+          <form action="/login" method="POST">
+              <div>
+          <input id="usernameInput"  type="text" name="username" placeholder="Username"/>
+          </div>
+          <div>
+          <input id="passwordInput"  type="password" name="password" placeholder="Password"/>
+        </div>
+
+        <button id="signIn" type="submit">Sign In</button>
+         </form>
+      </div>
+            
+          </form>
+          <p class="leave"><a href="/register">Register</a></p>
+   </div>
+   </div>
+</body>
+</html>

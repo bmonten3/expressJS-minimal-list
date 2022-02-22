@@ -1,0 +1,195 @@
+body {
+    background-color: #F3EBF6;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    background-color: #FFFFFF;
+    width: 410px;
+    height: auto;
+    
+    margin: 7em auto;
+    border-radius: 1.5em;
+    box-shadow: 5px 15px 35px 10px rgba(0, 0, 0, 0.14);
+}
+
+.divider
+{
+	position: relative;
+	margin-top: 5px;
+	height: 1px;
+}
+li {
+    
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    font-size: 17px;
+    
+}
+
+.errors {
+      
+        border-radius: 1.5em;
+        box-shadow: 5px 15px 35px 10px rgba(0, 0, 0, 0.14);
+        padding: 40px;
+        background-color: #f44336; /* Red */
+       
+        margin-bottom: 10px;
+      }
+      
+      /* The close button */
+      .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      
+      /* When moving the mouse over the close button */
+      .closebtn:hover {
+        color: black;
+      }
+
+ul {
+    list-style-type: disc;
+    
+}
+
+ul li::marker {
+    color: #8C55AA;
+}
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 3px;
+	background-image: linear-gradient(to right, transparent,  #8C55AA, transparent);
+   
+}
+.welcome, .toDo { 
+    text-align: center;
+    padding-top: 25px;
+    color: #8C55AA;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    
+}
+.toDo {
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 0px;
+}
+
+#usernameInput,  #confirmPasswordInput {
+    
+        width: 76%;
+        color: rgb(38, 50, 56);
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        background: rgba(136, 126, 126, 0.04);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 20px;
+        outline: none;
+        box-sizing: border-box;
+        border: 2px solid rgba(0, 0, 0, 0.02);
+        margin-bottom: 50px;
+        margin-left: 46px;
+        text-align: center;
+        margin-bottom: 27px;
+        font-family: 'Ubuntu', sans-serif;
+       
+}
+
+#usernameInput:focus, #passwordInput:focus,  #confirmPasswordInput:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+    
+}
+
+
+#passwordInput, #newTaskInput {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 50px;
+    margin-left: 46px;
+    text-align: center;
+    margin-bottom: 27px;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+#newTaskInput {
+    margin-left: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+    
+}
+
+#addTaskButton {
+    cursor: pointer;
+      border-radius: 5em;
+      color: #fff;
+      background: linear-gradient(to right, #9C27B0, #E040FB);
+      border: 0;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 16px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+}
+#signIn {
+    cursor: pointer;
+      border-radius: 5em;
+      color: #fff;
+      background: linear-gradient(to right, #9C27B0, #E040FB);
+      border: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      margin-left: 35%;
+      font-size: 13px;
+      box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+  }
+  .leave, .leave2 {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #E1BEE7;
+    padding-top: 12px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+  a {
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #e7bee2;
+    text-decoration: none;
+    text-align: center;
+}
+  @media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+}

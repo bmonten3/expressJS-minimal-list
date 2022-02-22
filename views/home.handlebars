@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="main">
+        <div class="welcome">
+            <h1>Welcome {{username}}!</h1>
+        </div>
+
+        
+        <form action="/add_task" method="POST">
+            
+            <input id="newTaskInput" type="text" name="taskDesc" placeholder="Add New Task"/>
+            <input id="addTaskButton" type="submit" value="+"/>
+            <br>
+            
+        </form>
+        <div class="divider div-transparent"></div>
+        <div class="toDo"> <h1>My ToDo's</h1></div>
+       
+        <ul class="toList">
+            {{#tasks}}
+            <li>{{task_desc}}</li>
+            {{/tasks}}
+        </ul>
+    <p class="leave"><a href="/logout">Logout</a></p>
+    </div>
+</body>
+</html>
